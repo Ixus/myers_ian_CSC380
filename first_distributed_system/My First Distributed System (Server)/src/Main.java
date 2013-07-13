@@ -1,4 +1,3 @@
-import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -18,31 +17,11 @@ public class Main {
     }
 
     public static void run() throws Exception {
-
-        // Listen
         ServerSocket listener = new java.net.ServerSocket(30000);
-        Socket socket = listener.accept(); // returns socket
+        while(true)   {
+            Socket socket = listener.accept(); // returns socket
+            new MyServer(socket).start();
+        }
 
-        // Read input stream (from client)
-        InputStream in = socket.getInputStream();
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in));
-        String operation = bufferedReader.readLine();
-        String a = bufferedReader.readLine();
-        String b = bufferedReader.readLine();
-
-        // MATH
-        int result = 0;
-        MathLogic m = new MathLogic();
-        if(operation.equals("add"))  result = m.add(a, b);
-        else if(operation.equals("subtract")) result = m.subtract(a, b);
-
-        // Write to output stream (to client)
-        OutputStream out = socket.getOutputStream();
-        byte[] sendableBytes = ("Answer: " + Integer.toString(result)).getBytes();
-        out.write(sendableBytes, 0, sendableBytes.length);
-
-        // Close
-        out.flush();
-        socket.close();
     }
 }

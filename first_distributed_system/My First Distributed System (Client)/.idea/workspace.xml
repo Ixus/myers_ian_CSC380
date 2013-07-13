@@ -2,23 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6011c1cd-4e28-49ad-94d1-536217c1538a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MyServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/Main.class" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/src/Main.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/workspace.xml" />
     </list>
     <ignored path="My First Distributed System (Client).iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$PROJECT_DIR$/../My First Distributed System (Server)/src/MathLogic.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373442071140" ignored="false" />
-    <file path="$PROJECT_DIR$/../My First Distributed System (Server)/src/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373499611154" ignored="false" />
-    <file path="/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373674444723" ignored="false" />
+    <file path="/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373677883077" ignored="false" />
     <file path="/fragment.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373674137950" ignored="false" />
     <file path="/MathLogic.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373441913825" ignored="false" />
     <file path="/Dummy.txt" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373674191948" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/imyers_reflection_activity/src/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373673834360" ignored="false" />
     <file path="$PROJECT_DIR$/../imyers_reflection_activity/src/ReflectionActivity.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373674237929" ignored="false" />
     <file path="$PROJECT_DIR$/../imyers_reflection_activity/src/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373674462271" ignored="false" />
+    <file path="/MyServer.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373677466909" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="4" selection-start="401" selection-end="401" vertical-scroll-proportion="-0.10586552">
+            <state line="5" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0962406">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -344,7 +344,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1040" extended-state="0" />
+    <frame x="960" y="0" width="960" height="1040" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -365,8 +365,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30178174" sideWeight="0.8229285" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17707151" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30178174" sideWeight="0.784336" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21566401" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -486,7 +486,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="4" selection-start="401" selection-end="401" vertical-scroll-proportion="-0.10586552">
+        <state line="5" column="0" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0962406">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
