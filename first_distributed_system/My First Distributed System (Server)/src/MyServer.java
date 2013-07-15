@@ -1,6 +1,8 @@
 import java.io.*;
 import java.net.Socket;
 
+import java.lang.reflect.Method;
+
 /**
  * Created with IntelliJ IDEA.
  * User: imyers
@@ -10,36 +12,62 @@ import java.net.Socket;
  */
 public class MyServer extends Thread {
     private Socket socket;
+    private Class mathLogic;
+    private InputStream in;
+    private OutputStream out;
+    BufferedReader bufferedReader;
 
-    public MyServer(Socket socket) {
+    public MyServer(Socket socket) throws Exception {
+        // Initialize
         this.socket = socket;
+        in = socket.getInputStream();
+        out = socket.getOutputStream();
+        bufferedReader = new BufferedReader(new InputStreamReader(in));
+        byte[] sendableBytes; // for output
+
+        // Reflection
+        mathLogic = Class.forName("MathLogic");
     }
 
     public void run() {
         try {
-            // Read input stream (from client)
-            InputStream in = socket.getInputStream();
-            BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(in));
-            String operation = bufferedReader.readLine();
-            String a = bufferedReader.readLine();
-            String b = bufferedReader.readLine();
-
-            // MATH
-            int result = 0;
-            MathLogic m = new MathLogic();
-            if(operation.equals("add"))  result = m.add(a, b);
-            else if(operation.equals("subtract")) result = m.subtract(a, b);
-
-            // Write to output stream (to client)
-            OutputStream out = socket.getOutputStream();
-            byte[] sendableBytes = ("Answer: " + Integer.toString(result)).getBytes();
-            out.write(sendableBytes, 0, sendableBytes.length);
-
-            // Close
+            String input = bufferedReader.readLine();
+            if(input.equals("GetMathLogicMethods")) sendMathLogicMethods();
+            else sendMathLogicResponse(input);
             out.flush();
             socket.close();
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
+    }
+
+    public void sendMathLogicMethods() throws Exception {
+        Method[] methods = mathLogic.getDeclaredMethods();
+        for(Method m : methods)                {
+            sendToClient(m.toString() + String.format("%n"));
+        }
+    }
+
+    public void sendMathLogicResponse(String input) throws Exception {
+        String a = bufferedReader.readLine();
+        String b = bufferedReader.readLine();
+
+        // MATH
+        int result = 0;
+        MathLogic m = new MathLogic();
+        if(input.equals("add"))  result = m.add(a, b);
+        else if(input.equals("subtract")) result = m.subtract(a, b);
+
+        // Write to output stream (to client)
+        sendToClient("Answer: " + Integer.toString(result));
+    }
+
+    public void sendToClient(String message) throws Exception    {
+        byte[] sendableBytes = message.getBytes();
+        out.write(sendableBytes, 0, sendableBytes.length);
+    }
+
+    public Method[] getMathLogicMethods() {
+        return mathLogic.getDeclaredMethods();
     }
 }

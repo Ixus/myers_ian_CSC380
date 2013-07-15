@@ -11,7 +11,7 @@ import java.net.Socket;
 
 public class Main {
     public static void main(String[] args) throws Exception  {
-        System.out.println("Server (running)");
+       System.out.println("Server (running)");
         run();
         System.out.println("Server (ending)");
     }
@@ -22,6 +22,5 @@ public class Main {
             Socket socket = listener.accept(); // returns socket
             new MyServer(socket).start();
         }
-
     }
 }

@@ -15,48 +15,60 @@ import java.util.Scanner;
 public class Main {
     static Scanner scanner = new Scanner(System.in);
     static String host = "localhost";
+    static int port = 30000;
+    static Scanner serverScan;
+    static Socket server;
+    static OutputStream serverOut;
+    static InputStream serverIn;
+    static PrintWriter serverWrite;
 
     public static void main(String[] args) throws Exception  {
         run();
     }
 
     public static void run() throws Exception  {
-        int result = 0;
 
-        // --------- Get user input ---------
-        System.out.print("Add or subtract?");
-        String operator = scanner.nextLine();
+        // ----------- Get user input -----------
+        connectToServer();
+        serverWrite.println("GetMathLogicMethods");
+        System.out.println("Enter a method name:");
+        while(serverScan.hasNext())    {
+            System.out.println(serverScan.next());
+        }
+        String method  = scanner.next();
 
         System.out.print("Enter 1st number:");
-        int a = scanner.nextInt();
+        int p1 = scanner.nextInt();
 
         System.out.print("Enter 2nd number:");
-        int b = scanner.nextInt();
-
-        // --------- Server socket ---------
-        Socket server = new Socket(host, 30000);
-
-       // Get input & output stream
-        OutputStream serverOut = server.getOutputStream();
-        InputStream serverIn = server.getInputStream();
-
+        int p2 = scanner.nextInt();
+         a
         // Write to output stream (to the server)
-        PrintWriter serverWrite = new PrintWriter(serverOut, true);
-        serverWrite.println(String.valueOf(operator));
-        serverWrite.println(String.valueOf(a));
-        serverWrite.println(String.valueOf(b));
+        connectToServer();
+        serverWrite.println(String.valueOf(method));
+        serverWrite.println(String.valueOf(p1));
+        serverWrite.println(String.valueOf(p2));
         server.shutdownOutput();
 
-        // Read from input stream (from the server)
-        Scanner serverScan = new Scanner(serverIn);
-        serverScan.useDelimiter("$");
-        String resp = serverScan.next();
+        // Read then print server response  (from the server)
+        System.out.println(serverScan.next());
 
-        // Print server response
-        System.out.println(resp);
+        // Continue or quit?
+        System.out.print("\'C\'ontinue or \'Q\'uit");
+        String input = scanner.next();
+        if(input.equals("C")) run();
 
         // Close
         server.shutdownInput();
         server.close();
+    }
+
+    public static void connectToServer() throws Exception {
+        server = new Socket(host, port);
+        serverOut = server.getOutputStream();
+        serverIn = server.getInputStream();
+        serverScan = new Scanner(serverIn);
+        serverScan.useDelimiter("$");
+        serverWrite = new PrintWriter(serverOut, true);
     }
 }

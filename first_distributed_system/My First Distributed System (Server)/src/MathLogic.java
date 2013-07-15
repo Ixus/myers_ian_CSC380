@@ -8,6 +8,8 @@
 
 public class MathLogic {
 
+    public MathLogic() {}
+
     public int add(int a, int b) {
         return a + b;
     }
