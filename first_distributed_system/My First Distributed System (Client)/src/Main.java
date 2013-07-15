@@ -42,7 +42,7 @@ public class Main {
 
         System.out.print("Enter 2nd number:");
         int p2 = scanner.nextInt();
-         a
+
         // Write to output stream (to the server)
         connectToServer();
         serverWrite.println(String.valueOf(method));

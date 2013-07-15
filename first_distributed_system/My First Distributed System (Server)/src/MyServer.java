@@ -52,14 +52,12 @@ public class MyServer extends Thread {
         String a = bufferedReader.readLine();
         String b = bufferedReader.readLine();
 
-        // MATH
-        int result = 0;
-        MathLogic m = new MathLogic();
-        if(input.equals("add"))  result = m.add(a, b);
-        else if(input.equals("subtract")) result = m.subtract(a, b);
+        Object instance = mathLogic.getConstructor().newInstance();
+        Method method = mathLogic.getDeclaredMethod(input, String.class, String.class);
+        String result = method.invoke(instance,a,b).toString();
 
         // Write to output stream (to client)
-        sendToClient("Answer: " + Integer.toString(result));
+        sendToClient("Answer: " + result);
     }
 
     public void sendToClient(String message) throws Exception    {
