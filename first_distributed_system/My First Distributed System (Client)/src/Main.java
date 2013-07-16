@@ -27,36 +27,24 @@ public class Main {
     }
 
     public static void run() throws Exception  {
+        getMethods();
+        String method  = scanner.next().trim();
+        String methodName = "";
 
-        // ----------- Get user input -----------
-        connectToServer();
-        serverWrite.println("GetMathLogicMethods");
-        System.out.println("Enter a method name:");
+        getMethodParams(method);
+        String params = "$";
         while(serverScan.hasNext())    {
             System.out.println(serverScan.next());
+            params += scanner.next() + "$";
         }
-        String method  = scanner.next();
 
-        System.out.print("Enter 1st number:");
-        int p1 = scanner.nextInt();
-
-        System.out.print("Enter 2nd number:");
-        int p2 = scanner.nextInt();
-
-        // Write to output stream (to the server)
-        connectToServer();
-        serverWrite.println(String.valueOf(method));
-        serverWrite.println(String.valueOf(p1));
-        serverWrite.println(String.valueOf(p2));
-        server.shutdownOutput();
-
-        // Read then print server response  (from the server)
+        runMethod(method, params);
         System.out.println(serverScan.next());
 
         // Continue or quit?
         System.out.print("\'C\'ontinue or \'Q\'uit");
         String input = scanner.next();
-        if(input.equals("C")) run();
+        if(input.equalsIgnoreCase("C")) run();
 
         // Close
         server.shutdownInput();
@@ -70,5 +58,36 @@ public class Main {
         serverScan = new Scanner(serverIn);
         serverScan.useDelimiter("$");
         serverWrite = new PrintWriter(serverOut, true);
+    }
+
+    public static void getMethods() throws Exception {
+        connectToServer();
+        serverWrite.println("GetClassMethods$MathLogic");
+        System.out.println("Enter a method name:");
+        while(serverScan.hasNext())    {
+            System.out.println(serverScan.next());
+        }
+    }
+
+    public static void getMethodParams(String method) throws Exception {
+        connectToServer();
+        serverWrite.println("GetMethodParams$MathLogic$" + method);
+        if(serverScan.hasNext()) System.out.println("Method found!");
+        else {
+            System.out.println("Method not found!");
+            run();
+        }
+    }
+
+    public static void runMethod(String method, String params) throws Exception {
+        connectToServer();
+        serverWrite.println("RunMethod$MathLogic$" + method + params);
+        server.shutdownOutput();
+        // Read then print server response  (from the server)
+        System.out.println(serverScan.next());
+    }
+
+    public static String cleanMethodNameString(String method) {
+        return method.split(" ")[2];
     }
 }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08d19731-297d-4f9f-b94f-509f796e705d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Client)\out\production\My First Distributed System (Client)\Main.class" afterPath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Client)\out\production\My First Distributed System (Client)\Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/MyServer.class" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/MyServer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/src/Main.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MyServer.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MyServer.java" />
@@ -11,10 +12,10 @@
     </list>
     <ignored path="imyers_reflection_activity.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="08d19731-297d-4f9f-b94f-509f796e705d" time="1373871359570" ignored="false" />
+    <file path="/Main.java" changelist="08d19731-297d-4f9f-b94f-509f796e705d" time="1373940768295" ignored="false" />
     <file path="/fragment.java" changelist="08d19731-297d-4f9f-b94f-509f796e705d" time="1373674137950" ignored="false" />
-    <file path="/Dummy.txt" changelist="08d19731-297d-4f9f-b94f-509f796e705d" time="1373864197354" ignored="false" />
-    <file path="/MyServer.java" changelist="08d19731-297d-4f9f-b94f-509f796e705d" time="1373871428944" ignored="false" />
+    <file path="/Dummy.txt" changelist="08d19731-297d-4f9f-b94f-509f796e705d" time="1373933253234" ignored="false" />
+    <file path="/MyServer.java" changelist="08d19731-297d-4f9f-b94f-509f796e705d" time="1373938207111" ignored="false" />
     <file path="/MathLogic.java" changelist="08d19731-297d-4f9f-b94f-509f796e705d" time="1373864406700" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,7 +80,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="8" selection-start="1005" selection-end="1093" vertical-scroll-proportion="1.0074074">
+            <state line="11" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.21871345">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -140,7 +141,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -151,52 +152,7 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imyers_reflection_activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; 1.7 &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imyers_reflection_activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imyers_reflection_activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imyers_reflection_activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="imyers_reflection_activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -209,6 +165,7 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -381,11 +338,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2494432" sideWeight="0.6708286" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3291714" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -465,6 +422,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ReflectionActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReflectionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="13" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ReflectionActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="7" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -497,7 +486,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="8" selection-start="1005" selection-end="1093" vertical-scroll-proportion="1.0074074">
+        <state line="11" column="0" selection-start="258" selection-end="258" vertical-scroll-proportion="0.21871345">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
