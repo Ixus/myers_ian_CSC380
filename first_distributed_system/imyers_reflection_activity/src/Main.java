@@ -1,3 +1,6 @@
+import javafx.application.Application;
+
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
@@ -39,6 +42,26 @@ public class Main {
 
         Method meth = c.getDeclaredMethod("addToNumber", double.class);
         System.out.println(meth.invoke(instance, 5));
+
+        // EXTRA
+        System.out.println("");
+
+        Method[] methods = c.getDeclaredMethods();
+        for(Method m : methods)      {
+
+            System.out.println(m);
+            System.out.println(m.getName());
+
+            Annotation[] annotations = m.getDeclaredAnnotations();
+            for(Annotation a : annotations) System.out.println(a);
+
+            Class<?>[] params = m.getParameterTypes();
+            for(Class<?> p : params) System.out.println(p);
+
+            System.out.println("");
+        }
+
+
     }
 
 }
