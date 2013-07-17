@@ -19,7 +19,13 @@ public class Main {
     static PrintWriter serverWrite;
 
     public static void main(String[] args) throws Exception  {
-        run();
+        Object[] o = new Object[3];
+        o[0] = "ya";
+        o[1] = "meh";
+        o[2] = "2,2,2";
+        o[2] = o[2].toString().split(",");
+        System.out.println("end");
+        //run();
     }
 
     public static void run() throws Exception  {

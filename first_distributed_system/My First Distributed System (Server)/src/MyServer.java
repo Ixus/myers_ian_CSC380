@@ -35,13 +35,12 @@ public class MyServer extends Thread {
 
     public void run() {
         try {
-            String[] input = in.readLine().split(delim);
+            Object[] input = in.readLine().split(delim);
 
-            for(String s : input)  System.out.println(s);
-            System.out.println("");
+            for(Object s : input)  System.out.println(s);
 
-            if(input[0].equalsIgnoreCase("GetMethods")) getMethods(input[1]);
-            else if(input[0].equalsIgnoreCase("MathLogic")) runMethod(input);
+            if(input[0].equals("GetMethods")) getMethods(input[1].toString());
+            else if(input[0].equals("MathLogic")) runMethod(input);
 
             out.flush();
             socket.close();
@@ -58,9 +57,13 @@ public class MyServer extends Thread {
         }
     }
 
-    public void runMethod(String[] input) throws Exception {
-        String className = input[0];
-        String methodName = input[1];
+    public void runMethod(Object[] input) throws Exception {
+        String className = input[0].toString();
+        String methodName = input[1].toString();
+
+        int indexOfLastParameter = input.length - 1;
+        Object[] lastParam = input[indexOfLastParameter].toString().split(",");
+        input[indexOfLastParameter] = lastParam;
 
         Class c = Class.forName(className);
         Object instance = c.getConstructor().newInstance();

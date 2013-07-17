@@ -2,23 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9267199b-852b-40e3-9391-f824aa65ee69" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Bob.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/out/production/My First Distributed System (Client)/Main.class" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/out/production/My First Distributed System (Client)/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/src/Main.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MathLogic.java" afterPath="$PROJECT_DIR$/src/MathLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyServer.java" afterPath="$PROJECT_DIR$/src/MyServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="My First Distributed System (Server).iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374037903162" ignored="false" />
+    <file path="/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374046360912" ignored="false" />
     <file path="/fragment.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1373674137950" ignored="false" />
     <file path="/MathLogic.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374034106316" ignored="false" />
     <file path="/Dummy.txt" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374017452386" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/imyers_reflection_activity/src/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1373673834360" ignored="false" />
     <file path="$PROJECT_DIR$/../imyers_reflection_activity/src/ReflectionActivity.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1373674237929" ignored="false" />
-    <file path="/MyServer.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374036955524" ignored="false" />
+    <file path="/MyServer.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374045901686" ignored="false" />
     <file path="/Bob.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374035357414" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +86,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="5" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
+            <state line="10" column="2" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -97,7 +95,7 @@
       <file leaf-file-name="MyServer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="4" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.72684085">
+            <state line="79" column="30" selection-start="2644" selection-end="2644" vertical-scroll-proportion="0.74897957">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#MyServer#0;class#MyServer#0" expanded="false" />
@@ -387,9 +385,10 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.67045456" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5800227" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39954597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39954597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -402,11 +401,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.67045456" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20489977" sideWeight="0.5800227" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20489977" sideWeight="0.60045403" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4199773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -546,13 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="5" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="105" column="70" selection-start="3617" selection-end="3617" vertical-scroll-proportion="0.29216152">
@@ -574,6 +565,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="2" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MathLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="1" selection-start="153" selection-end="153" vertical-scroll-proportion="0.0">
@@ -583,7 +581,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="4" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.72684085">
+        <state line="79" column="30" selection-start="2644" selection-end="2644" vertical-scroll-proportion="0.74897957">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#MyServer#0;class#MyServer#0" expanded="false" />
