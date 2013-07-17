@@ -1,5 +1,3 @@
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
@@ -17,75 +15,38 @@ public class Main {
     static String host = "localhost";
     static int port = 30000;
     static Socket server;
-    static Scanner serverScan;
+    static Scanner serverRead;
     static PrintWriter serverWrite;
-    static String delim = "|";
 
     public static void main(String[] args) throws Exception  {
         run();
     }
 
     public static void run() throws Exception  {
-        getMethods();
-        String method  = scanner.next().trim();
-        String methodName = method.split("\\.")[1].split("\\(")[0];
-        System.out.println(methodName);
+        String command = "";
 
-        getMethodParams(method);
-        String params = delim;
-        String[] methodParams = serverScan.next().split("\\"+delim);
-        for(String mp : methodParams) {
-            System.out.println(mp);
-            params += scanner.next() + delim;
+        // Send Commands
+        while(!command.equalsIgnoreCase("q")) {
+            connectToServer();
+            System.out.println("Enter command:");
+            command = scanner.nextLine();
+            serverWrite.println(command);
+            while(serverRead.hasNext())    {
+                System.out.println(serverRead.next());
+            }
         }
 
-        runMethod(methodName, params);
-        System.out.println(serverScan.next());
+        // ex: MathLogic add 2 2
+        // ex: GetMethods MathLogic
 
-        // Continue or quit?
-        System.out.print("\'C\'ontinue or \'Q\'uit");
-        String input = scanner.next();
-        if(input.equalsIgnoreCase("C")) run();
-        else {
-            server.shutdownInput();
-            server.close();
-        }
+        server.shutdownInput();
+        server.close();
     }
 
     public static void connectToServer() throws Exception {
         server = new Socket(host, port);
-
-        // Input & Output
-        OutputStream serverOut = server.getOutputStream();
-        InputStream serverIn = server.getInputStream();
-        // Wrap
-        serverScan = new Scanner(serverIn);
-        serverWrite = new PrintWriter(serverOut, true);
-
-        serverScan.useDelimiter("$");
-    }
-
-    public static void getMethods() throws Exception {
-        connectToServer();
-        serverWrite.println("GetClassMethods" + delim + "MathLogic");
-        System.out.println("Enter a method name:");
-        while(serverScan.hasNext())    {
-            System.out.println(serverScan.next());
-        }
-    }
-
-    public static void getMethodParams(String method) throws Exception {
-        connectToServer();
-        serverWrite.println("GetMethodParams" + delim + "MathLogic" + delim + method);
-        if(serverScan.hasNext()) System.out.println("Method found!");
-        else {
-            System.out.println("Method not found!");
-            run();
-        }
-    }
-
-    public static void runMethod(String methodName, String params) throws Exception {
-        connectToServer();
-        serverWrite.println("RunMethod" + delim + "MathLogic" + delim + methodName + params);
+        serverRead = new Scanner(server.getInputStream());
+        serverWrite = new PrintWriter(server.getOutputStream(), true);
+        serverRead.useDelimiter("$");
     }
 }

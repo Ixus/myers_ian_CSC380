@@ -25,4 +25,16 @@ public class MathLogic {
     public int subtract(String a, String b)  {
         return subtract(Integer.parseInt(a), Integer.parseInt(b));
     }
+
+    public int add(int... numbers)    {
+        int result = 0;
+        for(int n : numbers) result =+ n;
+        return result;
+    }
+
+    public int subtract(int... numbers)    {
+        int result = 0;
+        for(int n : numbers) result =- n;
+        return result;
+    }
 }
