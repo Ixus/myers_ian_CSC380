@@ -1,3 +1,5 @@
+package reflection;
+
 /**
  * Created with IntelliJ IDEA.
  * User: imyers
@@ -6,6 +8,8 @@
  * To change this template use File | Settings | File Templates.
  */
 public class Bob {
+    public Bob() {}
+
     public String hello()  {
         return "Hello human";
     }

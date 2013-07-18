@@ -2,24 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6011c1cd-4e28-49ad-94d1-536217c1538a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/MathLogic.class" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/MathLogic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/MyServer.class" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/MyServer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MathLogic.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MathLogic.java" />
+      <change type="DELETED" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\out\production\My First Distributed System (Server)\Bob.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\out\production\My First Distributed System (Server)\MathLogic.class" afterPath="" />
+      <change type="MOVED" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\src\Bob.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/reflection/Bob.java" />
+      <change type="MOVED" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\src\MathLogic.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/reflection/MathLogic.java" />
+      <change type="MODIFICATION" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\out\production\My First Distributed System (Server)\MyServer.class" afterPath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\out\production\My First Distributed System (Server)\MyServer.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MyServer.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MyServer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/misc.xml" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/workspace.xml" />
     </list>
     <ignored path="My First Distributed System (Client).iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374108411987" ignored="false" />
-    <file path="/fragment.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373674137950" ignored="false" />
+    <file path="/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374116603229" ignored="false" />
+    <file path="/fragment.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110140017" ignored="false" />
     <file path="/MathLogic.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374048784133" ignored="false" />
-    <file path="/Dummy.txt" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374107299298" ignored="false" />
+    <file path="/Dummy.txt" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110069935" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/imyers_reflection_activity/src/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373673834360" ignored="false" />
     <file path="$PROJECT_DIR$/../imyers_reflection_activity/src/ReflectionActivity.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373674237929" ignored="false" />
-    <file path="/MyServer.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374108695432" ignored="false" />
-    <file path="/Bob.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374035357451" ignored="false" />
+    <file path="/MyServer.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374119206087" ignored="false" />
+    <file path="/Bob.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374115359999" ignored="false" />
+    <file path="$PROJECT_DIR$/../My First Distributed System (Server)/src/Reflection/src/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110157962" ignored="false" />
+    <file path="$PROJECT_DIR$/../My First Distributed System (Server)/src/Reflection/src/Reflection/Bob.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110157962" ignored="false" />
+    <file path="$PROJECT_DIR$/../My First Distributed System (Server)/src/Reflection/src/MathLogic.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110157962" ignored="false" />
+    <file path="$PROJECT_DIR$/../My First Distributed System (Server)/src/Reflection/src/MyServer.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110158432" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +89,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="28" selection-start="334" selection-end="334" vertical-scroll-proportion="0.19415204">
+            <state line="26" column="29" selection-start="776" selection-end="776" vertical-scroll-proportion="0.36374268">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -524,7 +530,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="28" selection-start="334" selection-end="334" vertical-scroll-proportion="0.19415204">
+        <state line="26" column="29" selection-start="776" selection-end="776" vertical-scroll-proportion="0.36374268">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
