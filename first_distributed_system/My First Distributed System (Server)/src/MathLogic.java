@@ -37,4 +37,14 @@ public class MathLogic {
         for(int n : numbers) result =- n;
         return result;
     }
+
+    public int add(String... numbers)    {
+        int[] numbs = new int[numbers.length];
+        for(int i = 0; i < numbers.length; i++) {
+             numbs[i] = Integer.parseInt(numbers[i]);
+        }
+        int result = 0;
+        for(int n : numbs) result += n;
+        return result;
+    }
 }

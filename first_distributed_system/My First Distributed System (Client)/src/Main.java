@@ -19,13 +19,11 @@ public class Main {
     static PrintWriter serverWrite;
 
     public static void main(String[] args) throws Exception  {
-        Object[] o = new Object[3];
-        o[0] = "ya";
-        o[1] = "meh";
-        o[2] = "2,2,2";
-        o[2] = o[2].toString().split(",");
-        System.out.println("end");
-        //run();
+        System.out.println("Syntax:");
+        System.out.println("<class> <method> <parameters>");
+        System.out.println("Example: MathLogic add 2 2");
+        System.out.println("Array example: MathLogic add 2,4,3,7");
+        run();
     }
 
     public static void run() throws Exception  {

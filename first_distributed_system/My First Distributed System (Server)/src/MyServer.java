@@ -35,7 +35,9 @@ public class MyServer extends Thread {
 
     public void run() {
         try {
-            Object[] input = in.readLine().split(delim);
+            String[] fromClient = in.readLine().split(delim);
+            Object[] input = new Object[fromClient.length];
+            for(int i = 0; i < fromClient.length; i++) input[i] = fromClient[i];
 
             for(Object s : input)  System.out.println(s);
 
@@ -46,6 +48,7 @@ public class MyServer extends Thread {
             socket.close();
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            System.out.println(e.getMessage());
         }
     }
 
@@ -62,8 +65,10 @@ public class MyServer extends Thread {
         String methodName = input[1].toString();
 
         int indexOfLastParameter = input.length - 1;
-        Object[] lastParam = input[indexOfLastParameter].toString().split(",");
-        input[indexOfLastParameter] = lastParam;
+        Object[] lastParam = (Object[])input[indexOfLastParameter].toString().split(",");
+        if(CheckIfParameterIsArray(input[indexOfLastParameter].toString())) {
+            input[indexOfLastParameter] = lastParam;
+        }
 
         Class c = Class.forName(className);
         Object instance = c.getConstructor().newInstance();
@@ -89,5 +94,12 @@ public class MyServer extends Thread {
 
     public static String cleanMethodNameString(String method) {
         return method.split(" ")[2];
+    }
+
+    public static boolean CheckIfParameterIsArray(String parameter) {
+        for(int i = 0; i < parameter.length(); i++) {
+            if(parameter.substring(i,i+1).equals(",")) return true;
+        }
+        return false;
     }
 }
