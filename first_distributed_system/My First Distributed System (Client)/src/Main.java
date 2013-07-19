@@ -19,10 +19,7 @@ public class Main {
     static PrintWriter serverWrite;
 
     public static void main(String[] args) throws Exception  {
-        System.out.println("Syntax:");
-        System.out.println("<class> <method> <parameters>");
-        System.out.println("Example: MathLogic add 2 2");
-        System.out.println("Array example: MathLogic add 2,4,3,7");
+        help();
         run();
     }
 
@@ -35,13 +32,8 @@ public class Main {
             System.out.println("Enter command:");
             command = scanner.nextLine();
             serverWrite.println(command);
-            while(serverRead.hasNext())    {
-                System.out.println(serverRead.next());
-            }
+            System.out.println(serverRead.next());
         }
-
-        // ex: MathLogic add 2 2
-        // ex: GetMethods MathLogic
 
         server.shutdownInput();
         server.close();
@@ -53,4 +45,16 @@ public class Main {
         serverWrite = new PrintWriter(server.getOutputStream(), true);
         serverRead.useDelimiter("$");
     }
+
+    public static void help() {
+        System.out.println("COMMANDS");
+        System.out.println("GetClasses or c");
+        System.out.println("GetMethods or m <package>.<class>");
+        System.out.println("Run Methods Syntax:");
+        System.out.println("<class> <method> <parameters>");
+        System.out.println("Example: MathLogic add 2 2");
+        System.out.println("Array example: MathLogic add 2,4,3,7");
+        System.out.println("");
+    }
+
 }

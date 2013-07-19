@@ -2,24 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9267199b-852b-40e3-9391-f824aa65ee69" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\src\Bob.java" afterPath="$PROJECT_DIR$/src/reflection/Bob.java" />
-      <change type="MOVED" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\src\MathLogic.java" afterPath="$PROJECT_DIR$/src/reflection/MathLogic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/StringTypeConverter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/out/production/My First Distributed System (Client)/Main.class" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/out/production/My First Distributed System (Client)/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/src/Main.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyServer.java" afterPath="$PROJECT_DIR$/src/MyServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="My First Distributed System (Server).iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374116603229" ignored="false" />
+    <file path="/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374192972315" ignored="false" />
     <file path="/fragment.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374110140017" ignored="false" />
     <file path="/MathLogic.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374048784133" ignored="false" />
-    <file path="/Dummy.txt" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374110069849" ignored="false" />
+    <file path="/Dummy.txt" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374208486952" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/imyers_reflection_activity/src/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1373673834360" ignored="false" />
     <file path="$PROJECT_DIR$/../imyers_reflection_activity/src/ReflectionActivity.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1373674237929" ignored="false" />
-    <file path="/MyServer.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374119206087" ignored="false" />
+    <file path="/MyServer.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374213446387" ignored="false" />
     <file path="/Bob.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374115359999" ignored="false" />
+    <file path="/DataTypeConverter.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374197717136" ignored="false" />
+    <file path="/StringTypeConverter.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374214727667" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,38 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/StringTypeConverter.java" line="71" class="StringTypeConverter" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/MyServer.java" line="118" class="MyServer" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -76,23 +109,6 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/MyServer.java" line="114" class="MyServer" package="">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -105,7 +121,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+            <state line="24" column="5" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,7 +130,7 @@
       <file leaf-file-name="MathLogic.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reflection/MathLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="4" selection-start="205" selection-end="226" vertical-scroll-proportion="0.0">
+            <state line="23" column="0" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,15 +139,17 @@
       <file leaf-file-name="MyServer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="26" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.60451305">
-              <folding>
-                <element signature="method#MyServer#0;class#MyServer#0" expanded="false" />
-                <element signature="method#getClasses#0;class#MyServer#0" expanded="false" />
-                <element signature="method#runMethod_UnspecifiedSignature#0;class#MyServer#0" expanded="false" />
-                <element signature="method#CheckIfParameterIsArray#0;class#MyServer#0" expanded="false" />
-                <element signature="method#getClassesInPackage#0;class#MyServer#0" expanded="false" />
-                <element signature="method#getClassType#0;class#MyServer#0" expanded="false" />
-              </folding>
+            <state line="112" column="9" selection-start="3890" selection-end="3890" vertical-scroll-proportion="0.30643275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringTypeConverter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/StringTypeConverter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="84" column="0" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -139,7 +157,7 @@
       <file leaf-file-name="Bob.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reflection/Bob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="30" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+            <state line="14" column="5" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -168,6 +186,8 @@
         <option value="$PROJECT_DIR$/src/MathLogic.java" />
         <option value="$PROJECT_DIR$/src/Reflection/src/MathLogic.java" />
         <option value="$PROJECT_DIR$/src/reflection/Bob.java" />
+        <option value="$PROJECT_DIR$/src/DataTypeConverter.java" />
+        <option value="$PROJECT_DIR$/src/StringTypeConverter.java" />
         <option value="$PROJECT_DIR$/src/MyServer.java" />
       </list>
     </option>
@@ -176,8 +196,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="width" value="1317" />
+    <option name="width" value="1251" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -193,7 +212,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
-    <option name="STATE" value="2" />
+    <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
@@ -208,6 +227,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -260,8 +281,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,32 +459,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1317" height="1040" extended-state="0" />
+    <frame x="0" y="0" width="1251" height="1040" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.67045456" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5800227" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42792282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32690126" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32576618" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.67045456" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.67045456" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37131473" sideWeight="0.5800227" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18923464" sideWeight="0.5720772" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4199773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -598,52 +617,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/lang/String.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="70" selection-start="3617" selection-end="3617" vertical-scroll-proportion="0.29216152">
+        <state line="491" column="0" selection-start="17855" selection-end="17855" vertical-scroll-proportion="-1.0376569">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/lang/Integer.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="453" column="0" selection-start="16452" selection-end="16452" vertical-scroll-proportion="0.33262712">
-          <folding />
+        <state line="3092" column="66" selection-start="122555" selection-end="122555" vertical-scroll-proportion="0.6567696">
+          <folding>
+            <element signature="docComment;method#valueOf#6;class#String#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="208" selection-end="208" vertical-scroll-proportion="0.0">
+        <state line="24" column="5" selection-start="668" selection-end="668" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reflection/Bob.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="30" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+        <state line="14" column="5" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reflection/MathLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="4" selection-start="205" selection-end="226" vertical-scroll-proportion="0.0">
+        <state line="23" column="0" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StringTypeConverter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="84" column="0" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="26" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.60451305">
-          <folding>
-            <element signature="method#MyServer#0;class#MyServer#0" expanded="false" />
-            <element signature="method#getClasses#0;class#MyServer#0" expanded="false" />
-            <element signature="method#runMethod_UnspecifiedSignature#0;class#MyServer#0" expanded="false" />
-            <element signature="method#CheckIfParameterIsArray#0;class#MyServer#0" expanded="false" />
-            <element signature="method#getClassesInPackage#0;class#MyServer#0" expanded="false" />
-            <element signature="method#getClassType#0;class#MyServer#0" expanded="false" />
-          </folding>
+        <state line="112" column="9" selection-start="3890" selection-end="3890" vertical-scroll-proportion="0.30643275">
+          <folding />
         </state>
       </provider>
     </entry>

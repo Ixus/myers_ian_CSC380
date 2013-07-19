@@ -43,23 +43,23 @@ public class MyServer extends Thread {
 
     public void run() {
         try {
-            String[] fromClient = in.readLine().split(delim);
-            Object[] input = new Object[fromClient.length];
-            for(int i = 0; i < fromClient.length; i++) input[i] = fromClient[i];
+            System.out.println("Start Thread!");
 
-            for(Object s : input)  System.out.println(s);
+            Object[] input_temp = in.readLine().split(delim);
+            Object[] input = new Object[input_temp.length];
+            for(int i = 0; i < input.length; i++) input[i] = input_temp[i];
 
             // Run Command
-            if(input[0].equals("GetClasses")) {
+            if(input[0].toString().equals("GetClasses")||input[0].toString().equals("c")) {
                 getClasses(ReflectionPackage);
-            }   else if(input[0].equals("GetMethods")||input[0].equals("m")) {
+            }   else if(input[0].toString().equals("GetMethods")||input[0].toString().equals("m")) {
                 getMethods(input[1].toString());
             }   else {
                  if(input[0].toString().length()>9) {
                      String check = input[0].toString().substring(0,10);
                      if(check.equals("reflection")){
                          runMethod(input);
-                     }    else {
+                     } else {
                          out.println("Not a recognized command. Did you type in the package name?");
                      }
                  } else {
@@ -69,6 +69,8 @@ public class MyServer extends Thread {
 
             out.flush();
             socket.close();
+
+            System.out.println("End Thread!");
         } catch (Exception e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
             System.out.println(e.getMessage());
@@ -95,13 +97,6 @@ public class MyServer extends Thread {
         String className = input[0].toString();
         int methodNumber = Integer.parseInt(input[1].toString()) - 1;
 
-        // Check if last parameter is an array. If it is, then store an array in it.
-        int indexOfLastParameter = input.length - 1;
-        Object[] lastParam = input[indexOfLastParameter].toString().split(",");
-        if(CheckIfParameterIsArray(input[indexOfLastParameter].toString())) {
-            input[indexOfLastParameter] = lastParam;
-        }
-
         // Construct Class
         Class c = Class.forName(className);
         Object instance = c.getConstructor().newInstance();
@@ -111,13 +106,17 @@ public class MyServer extends Thread {
 
         // Get Parameter Values
         int numberOfParams = (input.length - 2);
-        Object[] paramValues = new Object[numberOfParams];
+        String[] paramValues = new String[numberOfParams];
         for(int i = 2; i < input.length; i++) {
-            paramValues[i-2] = input[i];
+            paramValues[i-2] = input[i].toString();
         }
 
+        // Convert Parameters To Correct Data Types
+        Class[] paramDateTypes = method.getParameterTypes();
+        Object[] paramArray = StringTypeConverter.convertToObjectArray(paramValues, paramDateTypes);
+
         // Invoke Method
-        String result = method.invoke(instance,paramValues).toString();
+        String result = method.invoke(instance,paramArray).toString();
 
         // Write to output stream (to client)
         out.print("Method returned: " + result);
@@ -187,7 +186,7 @@ public class MyServer extends Thread {
 
     public Class getClassType(String classType) {
         Class theType = null;
-        if(classType.equals("String")) theType = "".getClass();
+        if(classType.equals("String")) theType = String.class;
         else if(classType.equals("int")) theType = Integer.class;
         else if(classType.equals("double")) theType = Double.class;
         else if(classType.equals("float")) theType = Float.class;
@@ -198,4 +197,32 @@ public class MyServer extends Thread {
         return theType;
     }
 
+    public String[] getMethodSignature(Method method) {
+        return null;
+    }
+
+    public void convertParametersToCorrectDataTypes(Method method, Object[] paramValues) {
+        Class dataType;
+        Class<?>[] paramDataTypes = method.getParameterTypes();
+        for(int i = 0; i < paramValues.length; i++) {
+            dataType = paramDataTypes[i];
+
+            if(CheckIfParameterIsArray(paramValues[i].toString())) {
+                convertParametersToCorrectDataTypes_Arrays(method, (Object[])paramValues[i]);
+            }
+            if(dataType == int.class) { paramValues[i] = Integer.parseInt(paramValues[i].toString()); }
+            else if(dataType == double.class) { paramValues[i] = Double.parseDouble(paramValues[i].toString()); }
+            else if(dataType == float.class) { paramValues[i] = Float.parseFloat(paramValues[i].toString()); }
+        }
+    }
+
+    public void convertParametersToCorrectDataTypes_Arrays(Method method, Object[] param) {
+        Class<?>[] paramDataTypes = method.getParameterTypes();
+        Class dataType = paramDataTypes[paramDataTypes.length-1];
+        for(int i = 0; i < param.length; i++) {
+            if(dataType == int.class) { param[i] = Integer.parseInt(param[i].toString()); }
+            else if(dataType == double.class) { param[i] = Double.parseDouble(param[i].toString()); }
+            else if(dataType == float.class) { param[i] = Float.parseFloat(param[i].toString()); }
+        }
+    }
 }
