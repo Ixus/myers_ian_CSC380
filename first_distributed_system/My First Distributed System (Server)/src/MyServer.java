@@ -113,7 +113,7 @@ public class MyServer extends Thread {
 
         // Convert Parameters To Correct Data Types
         Class[] paramDateTypes = method.getParameterTypes();
-        Object[] paramArray = StringTypeConverter.convertToObjectArray(paramValues, paramDateTypes);
+        Object[] paramArray = StringToDataTypeConverter.convertToObjectArray(paramValues, paramDateTypes);
 
         // Invoke Method
         String result = method.invoke(instance,paramArray).toString();
