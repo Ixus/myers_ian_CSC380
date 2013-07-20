@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6011c1cd-4e28-49ad-94d1-536217c1538a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/src/reflection/MathLogic.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/reflection/MathLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MyServer.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MyServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/src/StringToDataTypeConverter.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/StringToDataTypeConverter.java" />
     </list>
     <ignored path="My First Distributed System (Client).iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374192972315" ignored="false" />
+    <file path="/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374283121661" ignored="false" />
     <file path="/fragment.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110140017" ignored="false" />
-    <file path="/MathLogic.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374048784133" ignored="false" />
+    <file path="/MathLogic.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374283246913" ignored="false" />
     <file path="/Dummy.txt" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374259490530" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/imyers_reflection_activity/src/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373673834360" ignored="false" />
     <file path="$PROJECT_DIR$/../imyers_reflection_activity/src/ReflectionActivity.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373674237929" ignored="false" />
@@ -21,6 +23,7 @@
     <file path="$PROJECT_DIR$/../My First Distributed System (Server)/src/Reflection/src/MyServer.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110158432" ignored="false" />
     <file path="/DataTypeConverter.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374197717136" ignored="false" />
     <file path="/StringTypeConverter.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374214727667" ignored="false" />
+    <file path="/StringToDataTypeConverter.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374281399545" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +87,7 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.48304093">
+            <state line="47" column="4" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.5625731">
               <folding />
             </state>
           </provider>
@@ -540,7 +543,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.48304093">
+        <state line="47" column="4" selection-start="1285" selection-end="1285" vertical-scroll-proportion="0.5625731">
           <folding />
         </state>
       </provider>

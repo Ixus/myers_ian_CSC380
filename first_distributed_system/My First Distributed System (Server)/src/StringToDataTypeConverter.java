@@ -58,9 +58,9 @@ public class StringToDataTypeConverter {
 
     public static Object[] convertTo(String[] x, Class dataType) {
         Object[] result = x;
-        if(dataType == int[].class) result = convertToIntArray(x);
-        if(dataType == double[].class) result = convertToDoubleArray(x);
-        if(dataType == float[].class) result = convertToFloatArray(x);
+        if(dataType == Integer[].class) result = convertToIntArray(x);
+        if(dataType == Double[].class) result = convertToDoubleArray(x);
+        if(dataType == Float[].class) result = convertToFloatArray(x);
         return result;
     }
 

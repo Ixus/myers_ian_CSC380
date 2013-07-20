@@ -2,15 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9267199b-852b-40e3-9391-f824aa65ee69" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\src\StringTypeConverter.java" afterPath="$PROJECT_DIR$/src/StringToDataTypeConverter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/src/Main.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyServer.java" afterPath="$PROJECT_DIR$/src/MyServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StringToDataTypeConverter.java" afterPath="$PROJECT_DIR$/src/StringToDataTypeConverter.java" />
     </list>
     <ignored path="My First Distributed System (Server).iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374192972315" ignored="false" />
+    <file path="/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374283121661" ignored="false" />
     <file path="/fragment.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374110140017" ignored="false" />
-    <file path="/MathLogic.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374048784133" ignored="false" />
+    <file path="/MathLogic.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374283246913" ignored="false" />
     <file path="/Dummy.txt" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374259490636" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/imyers_reflection_activity/src/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1373673834360" ignored="false" />
     <file path="$PROJECT_DIR$/../imyers_reflection_activity/src/ReflectionActivity.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1373674237929" ignored="false" />
@@ -18,6 +18,7 @@
     <file path="/Bob.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374115359999" ignored="false" />
     <file path="/DataTypeConverter.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374197717136" ignored="false" />
     <file path="/StringTypeConverter.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374214727667" ignored="false" />
+    <file path="/StringToDataTypeConverter.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374281399545" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,19 +94,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MathLogic.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MathLogic.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/reflection/MathLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="4" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+            <state line="17" column="4" selection-start="291" selection-end="291" vertical-scroll-proportion="0.18479532">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyServer.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MyServer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="123" column="0" selection-start="4310" selection-end="4310" vertical-scroll-proportion="2.226841">
+            <state line="42" column="4" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,7 +115,7 @@
       <file leaf-file-name="StringToDataTypeConverter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StringToDataTypeConverter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.0">
+            <state line="40" column="76" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,7 +155,9 @@
         <option value="$PROJECT_DIR$/src/reflection/Bob.java" />
         <option value="$PROJECT_DIR$/src/DataTypeConverter.java" />
         <option value="$PROJECT_DIR$/src/StringTypeConverter.java" />
+        <option value="$PROJECT_DIR$/src/StringToDataTypeConverter.java" />
         <option value="$PROJECT_DIR$/src/MyServer.java" />
+        <option value="$PROJECT_DIR$/src/reflection/MathLogic.java" />
       </list>
     </option>
   </component>
@@ -433,7 +436,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.5800227" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28149828" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3813848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -446,7 +449,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962137" sideWeight="0.67045456" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.7185017" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20267858" sideWeight="0.5800227" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4199773" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -615,21 +618,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StringToDataTypeConverter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2085" selection-end="2085" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reflection/MathLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="4" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+        <state line="40" column="76" selection-start="1154" selection-end="1154" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="123" column="0" selection-start="4310" selection-end="4310" vertical-scroll-proportion="2.226841">
+        <state line="42" column="4" selection-start="1291" selection-end="1291" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reflection/MathLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="4" selection-start="291" selection-end="291" vertical-scroll-proportion="0.18479532">
           <folding />
         </state>
       </provider>

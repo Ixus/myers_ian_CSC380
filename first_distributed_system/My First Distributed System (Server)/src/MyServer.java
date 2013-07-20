@@ -50,9 +50,9 @@ public class MyServer extends Thread {
             for(int i = 0; i < input.length; i++) input[i] = input_temp[i];
 
             // Run Command
-            if(input[0].toString().equals("GetClasses")||input[0].toString().equals("c")) {
+            if(input[0].toString().equals("classes")||input[0].toString().equals("c")) {
                 getClasses(ReflectionPackage);
-            }   else if(input[0].toString().equals("GetMethods")||input[0].toString().equals("m")) {
+            }   else if(input[0].toString().equals("methods")||input[0].toString().equals("m")) {
                 getMethods(input[1].toString());
             }   else {
                  if(input[0].toString().length()>9) {
