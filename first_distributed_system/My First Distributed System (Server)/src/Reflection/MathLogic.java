@@ -28,13 +28,13 @@ public class MathLogic {
         return subtract(Integer.parseInt(a), Integer.parseInt(b));
     }
 
-    public int add(Integer... numbers)    {
+    public int add(int... numbers)    {
         int result = 0;
         for(int n : numbers) result =+ n;
         return result;
     }
 
-    public int subtract(Integer... numbers)    {
+    public int subtract(int... numbers)    {
         int result = 0;
         for(int n : numbers) result =- n;
         return result;

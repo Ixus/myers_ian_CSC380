@@ -51,20 +51,34 @@ public class StringToDataTypeConverter {
     public static Object convertTo(String x, Class dataType) {
         Object result = x;
         if(dataType == int.class) result = convertToInt(x);
-        if(dataType == double.class) result = convertToDouble(x);
-        if(dataType == float.class) result = convertToFloat(x);
+        else if(dataType == double.class) result = convertToDouble(x);
+        else if(dataType == float.class) result = convertToFloat(x);
         return result;
     }
 
     public static Object[] convertTo(String[] x, Class dataType) {
         Object[] result = x;
         if(dataType == Integer[].class) result = convertToIntArray(x);
-        if(dataType == Double[].class) result = convertToDoubleArray(x);
-        if(dataType == Float[].class) result = convertToFloatArray(x);
+        else if(dataType == Double[].class) result = convertToDoubleArray(x);
+        else if(dataType == Float[].class) result = convertToFloatArray(x);
         return result;
     }
 
     /********** YES! *********/
+
+    public static String getDataType(String name) {
+        String classType = null;
+        if (name.equals("byte")) classType = "java.lang.Byte";
+        if (name.equals("short")) classType = "java.lang.Short";
+        if (name.equals("int")) classType = "java.lang.Integer";
+        if (name.equals("long")) classType = "java.lang.Long";
+        if (name.equals("char")) classType = "java.lang.Character";
+        if (name.equals("float")) classType = "java.lang.Float";
+        if (name.equals("boolean")) classType = "java.lang.Boolean";
+        if (name.equals("double")) classType = "java.lang.Double";
+        if (name.equals("java.lang.String")) classType = "java.lang.String";
+        return classType;
+    }
 
     public static Object[] convertToObjectArray(String[] valueArray, Class[] datatypeArray, String arrayDeliminator) {
             Object[] newArray = new Object[valueArray.length];
@@ -83,5 +97,12 @@ public class StringToDataTypeConverter {
 
     public static Object[] convertToObjectArray(String[] valueArray,  Class[] datatypeArray) {
         return convertToObjectArray(valueArray, datatypeArray, ",");
+    }
+
+    public static Object[] convertToObjectArray(Object[] valueArray,  Class[] datatypeArray) {
+        String[] strValueArray = new String[valueArray.length];
+        for(int i = 0; i < valueArray.length; i++)  strValueArray[i] = valueArray[i].toString();
+
+        return convertToObjectArray(strValueArray, datatypeArray);
     }
 }
