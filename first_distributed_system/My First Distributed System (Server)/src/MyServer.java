@@ -121,8 +121,8 @@ public class MyServer extends Thread {
 
         List<String> conParamValues = new ArrayList<String>();
 
-        while(index < input.length)   {
-            if(input[index].toString().split("m").length > 1) break;
+        while(index < input.length - 1)   {
+            if(input[index].toString().length() < 2 && input[index].toString().split("m").length > 1) break;
             conParamValues.add(input[index].toString());
             index++;
         }
@@ -135,7 +135,7 @@ public class MyServer extends Thread {
 
         List<String> methParamValues = new ArrayList<String>();
 
-        while(index < input.length)   {
+        while(index < input.length - 1)   {
             methParamValues.add(input[index].toString());
             index++;
         }

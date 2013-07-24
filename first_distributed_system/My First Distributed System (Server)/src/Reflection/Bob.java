@@ -13,7 +13,7 @@ public class Bob {
     public Bob() {}
 
     public Bob(String hello) {
-            this.hello = hello;
+            this.hello = hello.replace("_", " ");
     }
 
     public String hello()  {

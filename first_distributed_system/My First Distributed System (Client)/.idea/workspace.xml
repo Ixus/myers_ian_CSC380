@@ -2,21 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6011c1cd-4e28-49ad-94d1-536217c1538a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/src/reflection/Bob.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/reflection/Bob.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/reflection/Bob.class" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/reflection/Bob.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/MyServer.class" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/out/production/My First Distributed System (Server)/MyServer.class" />
+      <change type="MODIFICATION" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\src\reflection\Bob.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/reflection/Bob.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MyServer.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/src/MyServer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../REST/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../REST/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../My First Distributed System (Server)/.idea/workspace.xml" />
     </list>
     <ignored path="My First Distributed System (Client).iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374626349182" ignored="false" />
+    <file path="/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374626659618" ignored="false" />
     <file path="/fragment.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110140017" ignored="false" />
     <file path="/MathLogic.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374292129985" ignored="false" />
     <file path="/Dummy.txt" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374623970096" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/imyers_reflection_activity/src/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373673834360" ignored="false" />
     <file path="$PROJECT_DIR$/../imyers_reflection_activity/src/ReflectionActivity.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1373674237929" ignored="false" />
-    <file path="/MyServer.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374626251905" ignored="false" />
-    <file path="/Bob.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374625643458" ignored="false" />
+    <file path="/MyServer.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374627674720" ignored="false" />
+    <file path="/Bob.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374626545624" ignored="false" />
     <file path="$PROJECT_DIR$/../My First Distributed System (Server)/src/Reflection/src/Main.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110157962" ignored="false" />
     <file path="$PROJECT_DIR$/../My First Distributed System (Server)/src/Reflection/src/Reflection/Bob.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110157962" ignored="false" />
     <file path="$PROJECT_DIR$/../My First Distributed System (Server)/src/Reflection/src/MathLogic.java" changelist="6011c1cd-4e28-49ad-94d1-536217c1538a" time="1374110157962" ignored="false" />
@@ -84,13 +87,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="73" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.8432304">
+            <state line="37" column="23" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="method#main#0;class#Main#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scanner.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/util/Scanner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="929" column="4" selection-start="35030" selection-end="35030" vertical-scroll-proportion="0.6912114">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -560,19 +572,19 @@
         <state line="11" column="37" selection-start="424" selection-end="424" vertical-scroll-proportion="0.21871345" />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/util/Scanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="947" column="8" selection-start="35671" selection-end="35671" vertical-scroll-proportion="0.1912114">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="73" selection-start="1966" selection-end="1966" vertical-scroll-proportion="0.8432304">
+        <state line="37" column="23" selection-start="970" selection-end="970" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="method#main#0;class#Main#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_09/src.zip!/java/util/Scanner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="929" column="4" selection-start="35030" selection-end="35030" vertical-scroll-proportion="0.6912114">
+          <folding />
         </state>
       </provider>
     </entry>
