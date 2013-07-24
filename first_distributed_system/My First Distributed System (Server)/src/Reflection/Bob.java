@@ -8,10 +8,16 @@ package reflection;
  * To change this template use File | Settings | File Templates.
  */
 public class Bob {
+    String hello = "Hello human.";
+
     public Bob() {}
 
+    public Bob(String hello) {
+            this.hello = hello;
+    }
+
     public String hello()  {
-        return "Hello human";
+        return hello;
     }
 
     public String echo(String message)  {

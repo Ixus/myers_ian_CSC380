@@ -2,33 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9267199b-852b-40e3-9391-f824aa65ee69" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../JAXB/src/jaxb/Author.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../JAXB/src/jaxb/Book.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../JAXB/src/jaxb/Library.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../JAXB/src/xml/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../JAXB/src/xml/library.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/out/production/My First Distributed System (Client)/Main.class" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/out/production/My First Distributed System (Client)/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/src/Main.java" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/src/Main.java" />
-      <change type="MODIFICATION" beforePath="C:\Dropbox\Neumont\Workspace_Java\myers_ian_CSC380\first_distributed_system\My First Distributed System (Server)\src\reflection\MathLogic.java" afterPath="$PROJECT_DIR$/src/reflection/MathLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MyServer.java" afterPath="$PROJECT_DIR$/src/MyServer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StringToDataTypeConverter.java" afterPath="$PROJECT_DIR$/src/StringToDataTypeConverter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../My First Distributed System (Client)/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../My First Distributed System (Client)/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../REST/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../../REST/.idea/workspace.xml" />
     </list>
     <ignored path="My First Distributed System (Server).iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374625108484" ignored="false" />
+    <file path="/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374626349537" ignored="false" />
     <file path="/fragment.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374110140017" ignored="false" />
     <file path="/MathLogic.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374292129985" ignored="false" />
     <file path="/Dummy.txt" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374623970096" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/imyers_reflection_activity/src/Main.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1373673834360" ignored="false" />
     <file path="$PROJECT_DIR$/../imyers_reflection_activity/src/ReflectionActivity.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1373674237929" ignored="false" />
-    <file path="/MyServer.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374625223038" ignored="false" />
-    <file path="/Bob.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374115359999" ignored="false" />
+    <file path="/MyServer.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374626251905" ignored="false" />
+    <file path="/Bob.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374625643458" ignored="false" />
     <file path="/DataTypeConverter.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374197717136" ignored="false" />
     <file path="/StringTypeConverter.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374214727667" ignored="false" />
     <file path="/StringToDataTypeConverter.java" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374625086432" ignored="false" />
-    <file path="$PROJECT_DIR$/../../REST/.idea/workspace.xml" changelist="9267199b-852b-40e3-9391-f824aa65ee69" time="1374625414164" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,10 +106,10 @@
       <file leaf-file-name="MyServer.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="16" selection-start="2956" selection-end="2956" vertical-scroll-proportion="0.11401425">
+            <state line="138" column="50" selection-start="4780" selection-end="4780" vertical-scroll-proportion="0.347981">
               <folding>
-                <element signature="e#4153#4161#0" expanded="true" />
-                <element signature="e#4603#4611#0" expanded="true" />
+                <element signature="e#4227#4235#0" expanded="true" />
+                <element signature="e#4677#4685#0" expanded="true" />
                 <element signature="method#runMethod_UnspecifiedSignature#0;class#MyServer#0" expanded="false" />
               </folding>
             </state>
@@ -138,7 +128,7 @@
       <file leaf-file-name="Bob.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reflection/Bob.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="5" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+            <state line="13" column="4" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -166,11 +156,11 @@
         <option value="$PROJECT_DIR$/src/Bob.java" />
         <option value="$PROJECT_DIR$/src/MathLogic.java" />
         <option value="$PROJECT_DIR$/src/Reflection/src/MathLogic.java" />
-        <option value="$PROJECT_DIR$/src/reflection/Bob.java" />
         <option value="$PROJECT_DIR$/src/DataTypeConverter.java" />
         <option value="$PROJECT_DIR$/src/StringTypeConverter.java" />
         <option value="$PROJECT_DIR$/src/reflection/MathLogic.java" />
         <option value="$PROJECT_DIR$/src/StringToDataTypeConverter.java" />
+        <option value="$PROJECT_DIR$/src/reflection/Bob.java" />
         <option value="$PROJECT_DIR$/src/MyServer.java" />
       </list>
     </option>
@@ -623,13 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reflection/Bob.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/StringToDataTypeConverter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="100" column="4" selection-start="3702" selection-end="3702" vertical-scroll-proportion="0.0">
@@ -644,12 +627,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/reflection/Bob.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="251" selection-end="251" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="16" selection-start="2956" selection-end="2956" vertical-scroll-proportion="0.11401425">
+        <state line="138" column="50" selection-start="4780" selection-end="4780" vertical-scroll-proportion="0.347981">
           <folding>
-            <element signature="e#4153#4161#0" expanded="true" />
-            <element signature="e#4603#4611#0" expanded="true" />
+            <element signature="e#4227#4235#0" expanded="true" />
+            <element signature="e#4677#4685#0" expanded="true" />
             <element signature="method#runMethod_UnspecifiedSignature#0;class#MyServer#0" expanded="false" />
           </folding>
         </state>

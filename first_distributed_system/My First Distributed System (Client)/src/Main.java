@@ -48,7 +48,8 @@ public class Main {
 
     public static void help() {
         System.out.println("COMMANDS");
-        System.out.println("classes or c");
+        System.out.println("classes or c <package>.<class>");
+        System.out.println("constructors or con <package>.<class>");
         System.out.println("methods or m <package>.<class>");
         //System.out.println("Run Methods Syntax:");
         //System.out.println("<class> <method> <parameters>");
@@ -57,7 +58,7 @@ public class Main {
         System.out.println("<package>.<class> <constructor c#> <parameters> <method m#> <parameters>");
         System.out.println("Ex: reflection.MathLogic co m0 2 2");
         System.out.println("Ex: reflection.MathLogic c0 m2 2,2,2");
-        System.out.println("");
+        System.out.println("***Everything splits on spaces!!****");
     }
 
 }

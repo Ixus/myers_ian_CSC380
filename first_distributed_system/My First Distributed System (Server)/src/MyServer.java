@@ -117,6 +117,8 @@ public class MyServer extends Thread {
         int conIndex = Integer.parseInt(input[index].toString().split("c")[1]);
         index++;
 
+        Constructor constructor = c.getDeclaredConstructors()[conIndex];
+
         List<String> conParamValues = new ArrayList<String>();
 
         while(index < input.length)   {
@@ -139,14 +141,16 @@ public class MyServer extends Thread {
         }
 
         // Convert Parameters To Correct Data Types
+        Class[] conParamDataTypes = constructor.getParameterTypes();
         Class[] paramDateTypes = method.getParameterTypes();
 
+        Object[] conParamValues2 = StringToDataTypeConverter.convertToObjectArray(conParamValues.toArray(), conParamDataTypes);
         Object[] paramArray = StringToDataTypeConverter.convertToObjectArray(methParamValues.toArray(), paramDateTypes);
 
         // Invoke Constructor
         Object instance;
         if(conIndex==0) instance = c.getConstructors()[conIndex].newInstance();
-        else instance = c.getConstructors()[conIndex].newInstance(conParamValues);
+        else instance = c.getConstructors()[conIndex].newInstance(conParamValues2);
 
         // Invoke Method
         String result = method.invoke(instance,paramArray).toString();
