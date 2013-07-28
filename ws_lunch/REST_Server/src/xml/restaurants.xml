@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<restaurants>
+    <restaurant title="Astro Burger">
+        <menu>
+            <item name="Astro Burger" price="4.00" />
+            <item name="Bacon Burger" price="4.00" />
+            <item name="French Fries" price="2.20" />
+            <item name="Dr. Pepper" price="2.40" />
+        </menu>
+    </restaurant>
+    <restaurant title="McButthole">
+        <menu>
+            <item name="McAssToMouth" price="4.00" />
+            <item name="McChokeAndDie" price="4.00" />
+            <item name="Best French Fries" price="2.40" />
+            <item name="Coke" price="2.40" />
+        </menu>
+    </restaurant>
+</restaurants>
