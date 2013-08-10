@@ -39,7 +39,7 @@ public class Restaurant {
      * @return
      *     possible object is
      *     {@link Menu }
-     *     
+     *
      */
     public Menu getMenu() {
         return menu;
@@ -47,7 +47,7 @@ public class Restaurant {
 
     /**
      * Sets the value of the menu property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link Menu }

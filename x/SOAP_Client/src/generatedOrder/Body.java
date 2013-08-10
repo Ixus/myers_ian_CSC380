@@ -39,7 +39,7 @@ public class Body {
      * @return
      *     possible object is
      *     {@link GetOrderRequest }
-     *     
+     *
      */
     public GetOrderRequest getGetOrderRequest() {
         return getOrderRequest;
@@ -47,7 +47,7 @@ public class Body {
 
     /**
      * Sets the value of the getOrderRequest property.
-     * 
+     *
      * @param value
      *     allowed object is
      *     {@link GetOrderRequest }

@@ -5,7 +5,7 @@
             <order:GetOrderRequest>
                 <order:Restaurant>
                     <order:Menu>
-                        <order:item />
+                        <order:item name="" />
                     </order:Menu>
                 </order:Restaurant>
             </order:GetOrderRequest>

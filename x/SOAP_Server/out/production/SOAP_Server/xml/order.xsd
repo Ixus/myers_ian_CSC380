@@ -23,6 +23,8 @@
         </xs:complexType>
     </xs:element>
     <xs:element name="item">
-        <xs:complexType/>
+        <xs:complexType>
+            <xs:attribute name="name" use="required"/>
+        </xs:complexType>
     </xs:element>
 </xs:schema>

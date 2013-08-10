@@ -1,10 +1,7 @@
 package main;
 
 import generatedOrder.GetOrderRequest;
-import generatedRestaurantsResponse.GetRestaurantsResponse;
-import generatedRestaurantsResponse.Item;
-import generatedRestaurantsResponse.Menu;
-import generatedRestaurantsResponse.Restaurant;
+import generatedRestaurantsResponse.*;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -18,8 +15,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    private static final String restaurantsServlet = "http://localhost:8080/RestaurantsServlet";
-    private static final String orderServlet = "http://localhost:8080/OrderServlet";
+    private static final String restaurantsServlet = "http://localhost:8080/restaurants";
+    private static final String orderServlet = "http://localhost:8080/order";
 
     public static void main(String[] args) {
         new Main().run();
@@ -27,9 +24,9 @@ public class Main {
 
     public void run() {
         try {
-            GetRestaurantsResponse restaurants = getRestaurants();
-            List<Integer> selection = showMenu(restaurants);
-            submitOrder(selection, restaurants);
+            generatedRestaurantsResponse.Envelope restaurants = getRestaurants();
+            List<Integer> selection = showMenu(restaurants.getBody().getGetRestaurantsResponse());
+            submitOrder(selection, restaurants.getBody().getGetRestaurantsResponse());
         } catch (IOException e) {
             e.printStackTrace();
         } catch (JAXBException e) {
@@ -45,7 +42,7 @@ public class Main {
         return connection;
     }
 
-    public GetRestaurantsResponse getRestaurants() throws IOException, JAXBException {
+    public generatedRestaurantsResponse.Envelope getRestaurants() throws IOException, JAXBException {
         HttpURLConnection connection = createConnection(restaurantsServlet, "POST");
 
         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -57,10 +54,10 @@ public class Main {
         out.close();
         connection.disconnect();
 
-        JAXBContext jaxbContext = JAXBContext.newInstance(GetRestaurantsResponse.class);
+        JAXBContext jaxbContext = JAXBContext.newInstance(generatedRestaurantsResponse.Envelope.class);
         Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 
-        return (GetRestaurantsResponse) unmarshaller.unmarshal(file);
+        return (Envelope) unmarshaller.unmarshal(file);
     }
 
     public List<Integer> showMenu(GetRestaurantsResponse restaurants) {
@@ -91,25 +88,29 @@ public class Main {
 
         GetOrderRequest myOrder = new GetOrderRequest();
 
+        // Create SOAP envelope & body
+        generatedOrder.Envelope envelope = new generatedOrder.Envelope();
+        generatedOrder.Body body = new generatedOrder.Body();
+
         // Create ORDERED restaurant
         generatedOrder.Restaurant restaurant = new generatedOrder.Restaurant();
         restaurant.setMenu(new generatedOrder.Menu());
-        //restaurant.setTitle(restaurants.getRestaurant().get(restaurantIndex).getTitle());
 
         // Create ORDERED menu
         generatedOrder.Menu menu = new generatedOrder.Menu();
 
         // Create menu item
-        generatedOrder.Item item = null;
-        // MISSING PIECES
+        generatedOrder.Item item = new generatedOrder.Item();
 
-        restaurants.getRestaurant().get(restaurantIndex).getMenu().getItem().get(itemIndex);
+        // Get ITEM
+        item.setName(restaurants.getRestaurant().get(restaurantIndex).getMenu().getItem().get(itemIndex).getName());
 
         // Add
         menu.setItem(item);
         restaurant.setMenu(menu);
         myOrder.setRestaurant(restaurant);
-
+        body.setGetOrderRequest(myOrder);
+        envelope.setBody(body);
 
         // Connect to server
         HttpURLConnection connection = createConnection(orderServlet, "POST");
@@ -119,10 +120,11 @@ public class Main {
 
         OutputStreamWriter out = new OutputStreamWriter(connection.getOutputStream());
 
-        JAXBContext jaxbContext = JAXBContext.newInstance(GetOrderRequest.class);
+        JAXBContext jaxbContext = JAXBContext.newInstance(generatedOrder.Envelope.class);
         Marshaller marshaller = jaxbContext.createMarshaller();
 
-        marshaller.marshal(myOrder, out);
+        marshaller.marshal(envelope, out);
+
 
         out.flush();
         out.close();
