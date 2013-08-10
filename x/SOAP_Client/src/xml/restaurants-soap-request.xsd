@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2001/12/soap-envelope" xmlns:ianreq="http://neumont.edu/imyers/lunch/restaurants" xmlns:soap="http://www.w3.org/2001/12/soap-envelope">
+    <xs:import namespace="http://neumont.edu/imyers/lunch/restaurants" schemaLocation="ianreq.xsd"/>
+    <xs:element name="Envelope">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="soap:Body"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Body">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ianreq:GetRestaurants"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

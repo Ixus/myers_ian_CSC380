@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2001/12/soap-envelope">
+    <soap:Body xmlns:r="http://neumont.edu/myers/lunch/restaurants">
+        <r:restaurantResponse>
+            <r:restaurant nmae="Burger King" />
+            <r:restaurant nmae="Carl's Junior" />
+            <r:restaurant nmae="Wendy's" />
+        </r:restaurantResponse>
+    </soap:Body>
+</soap:Envelope>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://neumont.edu/imyers/lunch/restaurants" xmlns:order="http://neumont.edu/imyers/lunch/restaurants" xmlns:soap="http://www.w3.org/2001/12/soap-envelope">
+    <xs:import namespace="http://www.w3.org/2001/12/soap-envelope" schemaLocation="order-soap-request.xsd"/>
+    <xs:element name="GetOrderRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="order:Restaurant"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Restaurant">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="order:Menu"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Menu">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="order:item"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="item">
+        <xs:complexType/>
+    </xs:element>
+</xs:schema>

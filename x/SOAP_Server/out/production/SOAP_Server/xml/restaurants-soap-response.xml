@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2001/12/soap-envelope">
+    <soap:Body xmlns:ianresp="http://neumont.edu/imyers/lunch/restaurants">
+        <ianresp:GetRestaurantsResponse>
+            <ianresp:restaurant title="Fluffies Chicken">
+                <ianresp:menu>
+                    <ianresp:item name="Couch Cushion Chicken Bucket" price="2.5"/>
+                    <ianresp:item name="Extra Crispy Chicken 10 Day Rule Deluxe" price="1.5"/>
+                    <ianresp:item name="Large Coke" price="2.5"/>
+                </ianresp:menu>
+            </ianresp:restaurant>
+            <ianresp:restaurant title="Yangs Kitten">
+                <ianresp:menu>
+                    <ianresp:item name="Kitten Raspberry Pie" price="4.5"/>
+                    <ianresp:item name="Chocolate Kitten Cupcake" price="0.99"/>
+                    <ianresp:item name="Large Coke" price="2.5"/>
+                </ianresp:menu>
+            </ianresp:restaurant>
+        </ianresp:GetRestaurantsResponse>
+    </soap:Body>
+</soap:Envelope>

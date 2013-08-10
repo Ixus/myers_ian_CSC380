@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2001/12/soap-envelope">
+    <soap:Body xmlns:order="http://neumont.edu/imyers/lunch/restaurants">
+            <order:GetOrderRequest>
+                <order:Restaurant>
+                    <order:Menu>
+                        <order:item />
+                    </order:Menu>
+                </order:Restaurant>
+            </order:GetOrderRequest>
+    </soap:Body>
+</soap:Envelope>

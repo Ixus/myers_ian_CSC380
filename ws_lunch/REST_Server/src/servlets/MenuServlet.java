@@ -15,13 +15,6 @@ import javax.xml.bind.Marshaller;
 import java.io.IOException;
 import java.util.List;
 
-/**
- * Created with IntelliJ IDEA.
- * User: imyers
- * Date: 7/27/13
- * Time: 2:19 PM
- * To change this template use File | Settings | File Templates.
- */
 @WebServlet("/MenuServlet")
 public class MenuServlet extends javax.servlet.http.HttpServlet {
 

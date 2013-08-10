@@ -1,0 +1,10 @@
+<catering>
+    <restaurant name="Fruit Stand">
+        <menuItem name="banana" price="1.00" />
+        <menuItem name="apple" price="2.00" />
+    </restaurant>
+    <restaurant name="A Place">
+        <menuItem name="pie slice" price="1.00" />
+        <menuItem name="cookie" price="2.00" />
+    </restaurant>
+</catering>

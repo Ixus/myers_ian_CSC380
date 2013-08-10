@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://neumont.edu/imyers/lunch/restaurants" xmlns:ianresp="http://neumont.edu/imyers/lunch/restaurants" xmlns:soap="http://www.w3.org/2001/12/soap-envelope">
+    <xs:import namespace="http://www.w3.org/2001/12/soap-envelope" schemaLocation="restaurants-soap-response.xsd"/>
+    <xs:element name="GetRestaurantsResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="ianresp:restaurant"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="restaurant">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="ianresp:menu"/>
+            </xs:sequence>
+            <xs:attribute name="title" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="menu">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="ianresp:item"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="item">
+        <xs:complexType>
+            <xs:attribute name="name" use="required"/>
+            <xs:attribute name="price" use="required" type="xs:decimal"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
